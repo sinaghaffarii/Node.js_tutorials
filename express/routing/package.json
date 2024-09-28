@@ -1,0 +1,21 @@
+{
+  "name": "routing",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "match": "nodemon matched-routes.js",
+    "query": "nodemon query.js",
+    "body": "nodemon body.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
