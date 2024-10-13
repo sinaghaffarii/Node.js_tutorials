@@ -1,6 +1,6 @@
 const { validationMapper } = require("./express-validation-mapper");
 
-const NotFoundError = (req, res, next) => {
+const NotFoundError = (req, res) => {
   return res.status(404).json({
     statusCode: res.statusCode,
     error: {
@@ -9,7 +9,7 @@ const NotFoundError = (req, res, next) => {
     },
   });
 };
-const ErrorHandler = (err, req, res, next) => {
+const ErrorHandler = (err, req, res) => {
   return res.json({
     statusCode: err.status || err.statusCode || 500,
     error: {

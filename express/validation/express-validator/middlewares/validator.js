@@ -4,7 +4,7 @@ function checkValidation(req, res, next) {
   const error = validationResult(req);
   let obj = {};
   error?.errors?.forEach((err) => {
-    obj[err.param] = err.msg;
+    obj[err.path] = err.msg;
   });
   if (Object.keys(obj).length > 0) {
     throw {
