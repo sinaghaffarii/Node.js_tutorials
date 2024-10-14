@@ -1,6 +1,7 @@
 {
-  "name": "express-validator",
+  "name": "express-validation",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
@@ -8,14 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^4.21.1",
-    "express-validation": "^4.1.1",
-    "express-validator": "^7.2.0",
-    "joi": "^17.13.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.7"
+    "express": "^4.18.2",
+    "express-validation": "^4.1.0",
+    "joi": "^17.7.0"
   }
 }
