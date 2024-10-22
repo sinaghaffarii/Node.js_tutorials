@@ -22,3 +22,7 @@ const token1 = jwt.sign({
     }
 );
 console.log(token1);
+
+// for generate openssl file key should write this command in terminal:
+
+//--------------- openssl genrsa -out privateKey.key 1024 / 2048 ---------------------

@@ -9,7 +9,7 @@ app.get("/set-cookie", (req, res) => {
         expires: new Date(d.getTime() + 50000),
         httpOnly: true,
         signed: true,
-        // secure: true,
+        // secure: true, // هر وقت sameSite رو استفاده کردم باید secure رو true قرار بدم
         sameSite: "none" //lax - strict - none
     });
     res.cookie('nodejs', 'javascript, Typescript')

@@ -8,7 +8,8 @@ function setTime(req, res, next) {
     next();
 }
 router.use(setTime)
+// وقتی setTime رو به این صورت اینجا فراخوانی میکنیم دیگه نیازی به افزودن داخل خود Use Router نیستش!!
 router.use("/user", userRouter)
-router.use("/blog",setTime, blogRouter)
+router.use("/blog", blogRouter)
 router.use("/comment", commentRouter)
 module.exports = router

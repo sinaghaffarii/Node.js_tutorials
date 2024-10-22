@@ -13,5 +13,5 @@ function verifyHashPassword(password, hashPassword) {
     return (newHash === hashPassword)
 }
 const hashed = hashPassword("123456")
-const result = verifyHashPassword("1234567", hashed);
+const result = verifyHashPassword("123456", hashed);
 console.log(result);

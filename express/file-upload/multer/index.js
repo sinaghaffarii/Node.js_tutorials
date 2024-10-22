@@ -5,6 +5,8 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(express.static("public"))
+
+
 app.post("/upload-single", uploadFile.single("image", 3),(req, res) => {
     res.send(req.file)
 })
